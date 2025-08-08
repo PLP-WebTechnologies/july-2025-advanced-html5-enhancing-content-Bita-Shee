@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form</title>
+  </head>
+  <body style="background-color: aquamarine;">
+    <header>
+      <h1>Welcome to Mama's corner cooking classes</h1>
+        <p><i><b>Join us for an unforgettable culinary experience!</i><b></b></p>
+        <video width="600" autoplay loop muted>
+          <source src="https://videos.pexels.com/video-files/3195650/3195650-uhd_3840_2160_25fps.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <audio autoplay loop>
+          <source src="https://cdn.pixabay.com/download/audio/2025/06/23/audio_e6a00ad257.mp3?filename=embrace-364091.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+    </header>
+    <main>
+        <p style="color:red">Explore our latest cooking classes and recipes!</p>
+        <p>Sign up for our newsletter to receive the latest updates and recipes!</p>
+        <a href="cooking-class.mp4" target="_blank">
+        <img src="https://images.pexels.com/photos/2403391/pexels-photo-2403391.jpeg?cs=srgb&dl=pexels-yente-van-eynde-1263034-2403391.jpg&fm=jpg&_gl=1*o0l3qg*_ga*MzM4ODAwNjczLjE3NTM3MDU0NDA.*_ga_8JE65Q40S6*czE3NTQ2Nzk1ODckbzMkZzEkdDE3NTQ2Nzk4NzYkajQxJGwwJGgw" alt="Chef preparing a dish" width="250" height="500"></a>
+        <h2>Available courses</h2>
+        <ul>
+          <li>Italian Cuisine</li>
+          <li>French Pastry</li>
+          <li>Vegetarian Delights</li>
+           <ol type="a">
+             <li>Chickpea and Avocado salad</li>
+             <li>Gluten-Free Baking</li>
+            </ol>
+        </ul>
+
+        <h3>Sample Recipe Steps</h3>
+        <ol type="i">
+           <li>Boil water</li>
+           <li>Add pasta and cook for 10 minutes</li>
+           <li>Drain and serve with sauce</li>
+        </ol>
+        <h2>Class Schedule</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Course</th>
+              <th>Instructor</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Aug 11</td>
+              <td>10:00 AM</td>
+              <td>Italian Cuisine</td>
+              <td>Chef Mario</td>
+              <td>$50</td>
+            </tr>
+            <tr>
+              <td>Aug 15</td>
+              <td>2:00 PM</td>
+              <td>French Pastry</td>
+              <td>Chef Pierre</td>
+              <td>$60</td>
+            </tr>
+            <tr>
+              <td>2023-10-03</td>
+              <td>11:00 AM</td>
+              <td>Vegetarian Delights</td>
+              <td>Chef Anna</td>
+              <td>$45</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>Register now</h3>
+        <form>
+            <label for=""name">Name:</label>
+            <input type="text" id="name" name="fullname" placeholder="Enter your name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br>
+            <label for="gender"Gender:</label>
+            <input type="radio" id="Male" name="gender" value="Male"> Male
+            <input type="radio" id="Female" name="gender" value="Female"> Female
+             <br>
+            <label for="course">Select Course:</label>
+            <select id="course" name="course">
+                <option value="italian">Italian Cuisine</option>
+                <option value="french">French Pastry</option>
+                <option value="vegetarian">Vegetarian Delights</option>
+            </select>
+            <br>
+            <fieldset>
+                <legend>Preferred Contact Method:</legend>
+                <input type="radio" id="emailContact" name="contactMethod" value="email">
+                <label for="emailContact">Email</label>
+                <input type="radio" id="phoneContact" name="contactMethod" value="phone">
+                <label for="phoneContact">Phone</label>
+            </fieldset>
+            <br>
+            <button type="submit">Register</button>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+  </body>
+</html>
