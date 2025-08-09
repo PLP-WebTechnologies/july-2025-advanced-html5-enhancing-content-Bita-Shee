@@ -7,22 +7,29 @@
   </head>
   <body style="background-color: aquamarine;">
     <header>
-      <h1>Welcome to Mama's corner cooking classes</h1>
+      <h1 style="color:crimson;">Welcome to Mama's corner cooking classes</h1>
         <p><i><b>Join us for an unforgettable culinary experience!</i><b></b></p>
         <video width="600" autoplay loop muted>
           <source src="https://videos.pexels.com/video-files/3195650/3195650-uhd_3840_2160_25fps.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
-        <audio autoplay loop>
+        <audio autoplay loop preload="auto">
           <source src="https://cdn.pixabay.com/download/audio/2025/06/23/audio_e6a00ad257.mp3?filename=embrace-364091.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
     </header>
     <main>
-        <p style="color:red">Explore our latest cooking classes and recipes!</p>
+      <article>
+        <section id="introduction">
+          <h2>About Us</h2>
+          <p>We are passionate about cooking and sharing our knowledge with others. Join us to learn new recipes and cooking techniques!</p>
+        <h2>About Our Classes</h2>
+        <p style="color:green;">Explore our latest cooking classes and recipes!</p>
         <p>Sign up for our newsletter to receive the latest updates and recipes!</p>
         <a href="cooking-class.mp4" target="_blank">
         <img src="https://images.pexels.com/photos/2403391/pexels-photo-2403391.jpeg?cs=srgb&dl=pexels-yente-van-eynde-1263034-2403391.jpg&fm=jpg&_gl=1*o0l3qg*_ga*MzM4ODAwNjczLjE3NTM3MDU0NDA.*_ga_8JE65Q40S6*czE3NTQ2Nzk1ODckbzMkZzEkdDE3NTQ2Nzk4NzYkajQxJGwwJGgw" alt="Chef preparing a dish" width="250" height="500"></a>
+        </section>
+        <section id="recipes">
         <h2>Available courses</h2>
         <ul>
           <li>Italian Cuisine</li>
@@ -33,13 +40,16 @@
              <li>Gluten-Free Baking</li>
             </ol>
         </ul>
-
+      <hr>
         <h3>Sample Recipe Steps</h3>
         <ol type="i">
            <li>Boil water</li>
            <li>Add pasta and cook for 10 minutes</li>
            <li>Drain and serve with sauce</li>
         </ol>
+        <hr>
+        </section>
+        <section id="class-info">
         <h2>Class Schedule</h2>
         <table border="1">
           <thead>
@@ -47,8 +57,7 @@
               <th>Date</th>
               <th>Time</th>
               <th>Course</th>
-              <th>Instructor</th>
-              <th>Price</th>
+              <th>Instructor</th>              
             </tr>
           </thead>
           <tbody>
@@ -56,22 +65,19 @@
               <td>Aug 11</td>
               <td>10:00 AM</td>
               <td>Italian Cuisine</td>
-              <td>Chef Mario</td>
-              <td>$50</td>
+              <td>Chef Mario</td>              
             </tr>
             <tr>
               <td>Aug 15</td>
               <td>2:00 PM</td>
               <td>French Pastry</td>
-              <td>Chef Pierre</td>
-              <td>$60</td>
+              <td>Chef Pierre</td>              
             </tr>
             <tr>
               <td>2023-10-03</td>
               <td>11:00 AM</td>
               <td>Vegetarian Delights</td>
-              <td>Chef Anna</td>
-              <td>$45</td>
+              <td>Chef Anna</td>              
             </tr>
           </tbody>
         </table>
@@ -87,6 +93,15 @@
             <input type="radio" id="Male" name="gender" value="Male"> Male
             <input type="radio" id="Female" name="gender" value="Female"> Female
              <br>
+             <label>Price (Beginner Class):</label>
+             <input type="text" value="$45" readonly>
+             <br>
+             <label>Price (Intermediate Class):</label>
+             <input type="text" value="$50" readonly>
+             <br>
+             <label>Price (Advanced Class):</label>
+             <input type="text" value="$60" readonly>
+             <br>
             <label for="course">Select Course:</label>
             <select id="course" name="course">
                 <option value="italian">Italian Cuisine</option>
@@ -100,13 +115,18 @@
                 <label for="emailContact">Email</label>
                 <input type="radio" id="phoneContact" name="contactMethod" value="phone">
                 <label for="phoneContact">Phone</label>
+                <br>
+                <label>Postal Code:</label>
+                <input type="text" pattern="[0-9]{5}" title="Enter a 5-digit number">
             </fieldset>
             <br>
             <button type="submit">Register</button>
+          </section>
+          </article>
         </form>
     </main>
     <footer>
-
+      <P>Contact us @ mamakitichen@yahoo.com</P>
     </footer>
   </body>
 </html>
